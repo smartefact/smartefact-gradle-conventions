@@ -11,6 +11,7 @@ description = "Gradle conventions for Smartefact projects."
 dependencies {
     api("biz.aQute.bnd.builder:biz.aQute.bnd.builder.gradle.plugin:7.2.1")
     api("com.gradle.plugin-publish:com.gradle.plugin-publish.gradle.plugin:2.1.1")
+    api("me.champeau.jmh:me.champeau.jmh.gradle.plugin:0.7.3")
     api("net.ltgt.gradle:gradle-errorprone-plugin:5.1.0")
     api("net.ltgt.gradle:gradle-nullaway-plugin:3.0.0")
     api("org.jetbrains.dokka:dokka-gradle-plugin:2.2.0")
