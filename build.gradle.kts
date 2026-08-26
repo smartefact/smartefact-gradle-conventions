@@ -8,6 +8,10 @@ group = "org.smartefact"
 version = "0.1.0"
 description = "Gradle conventions for Smartefact projects."
 
+dependencies {
+    api("net.ltgt.gradle:gradle-errorprone-plugin:5.1.0")
+}
+
 val functionalTest = testing.suites.register<JvmTestSuite>("functionalTest") {
     dependencies {
         implementation(project())
