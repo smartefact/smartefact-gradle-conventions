@@ -12,6 +12,8 @@ dependencies {
     api("biz.aQute.bnd.builder:biz.aQute.bnd.builder.gradle.plugin:7.2.1")
     api("net.ltgt.gradle:gradle-errorprone-plugin:5.1.0")
     api("net.ltgt.gradle:gradle-nullaway-plugin:3.0.0")
+    api("org.jetbrains.dokka:dokka-gradle-plugin:2.2.0")
+    api("org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.10")
 }
 
 val functionalTest = testing.suites.register<JvmTestSuite>("functionalTest") {
