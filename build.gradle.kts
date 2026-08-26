@@ -9,6 +9,7 @@ version = "0.1.0"
 description = "Gradle conventions for Smartefact projects."
 
 dependencies {
+    api("biz.aQute.bnd.builder:biz.aQute.bnd.builder.gradle.plugin:7.2.1")
     api("net.ltgt.gradle:gradle-errorprone-plugin:5.1.0")
     api("net.ltgt.gradle:gradle-nullaway-plugin:3.0.0")
 }
