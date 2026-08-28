@@ -12,20 +12,19 @@ plugins {
     id("org.smartefact.java")
 }
 
-testing {
-    suites {
-        val test = named(UNIT_TEST)
-        val functionalTest = register(FUNCTIONAL_TEST, JvmTestSuite::class) {
-            targets {
-                all {
-                    testTask.configure {
-                        shouldRunAfter(test)
-                    }
-                }
+val functionalTest = testing.suites.register<JvmTestSuite>(FUNCTIONAL_TEST) {
+    dependencies {
+        implementation(project())
+    }
+    targets {
+        all {
+            testTask.configure {
+                shouldRunAfter(tasks.test)
             }
         }
-        tasks.check {
-            dependsOn(functionalTest)
-        }
     }
+}
+
+tasks.check {
+    dependsOn(functionalTest)
 }

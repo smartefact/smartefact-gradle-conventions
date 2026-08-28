@@ -12,6 +12,8 @@ plugins {
     id("org.smartefact.java")
 }
 
-testing {
-    suites.register(ARCH_TEST, JvmTestSuite::class)
+val archTest = testing.suites.register<JvmTestSuite>(ARCH_TEST) {
+    dependencies {
+        implementation(project())
+    }
 }
