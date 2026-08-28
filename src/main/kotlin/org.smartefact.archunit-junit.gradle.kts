@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 /**
- * Smartefact conventions - ArchUnit on JUnit
+ * Smartefact Gradle conventions - ArchUnit on JUnit
  *
  * Uses ArchUnit in the architecture tests.
  *
