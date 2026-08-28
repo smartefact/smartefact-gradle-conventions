@@ -17,3 +17,7 @@ val archTest = testing.suites.register<JvmTestSuite>(ARCH_TEST) {
         implementation(project())
     }
 }
+
+tasks.check {
+    dependsOn(archTest)
+}
