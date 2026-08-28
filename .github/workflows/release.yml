@@ -1,0 +1,17 @@
+# GitHub workflow - Release
+
+name: Release
+
+on:
+
+  push:
+    tags: ["v*"]
+
+jobs:
+
+  workflow-gradle-plugin-release:
+    name: Gradle plugin release workflow
+    uses: smartefact/smartefact-github-workflows/.github/workflows/gradle-plugin-release.yml@v1
+    secrets:
+      gradle-publish-key: ${{ secrets.GRADLE_PUBLISH_KEY }}
+      gradle-publish-secret: ${{ secrets.GRADLE_PUBLISH_SECRET }}
