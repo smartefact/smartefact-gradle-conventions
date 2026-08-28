@@ -9,7 +9,7 @@
  */
 
 plugins {
-    id("smartefact.java")
+    id("org.smartefact.java")
 }
 
 testing {

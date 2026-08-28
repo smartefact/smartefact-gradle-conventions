@@ -9,7 +9,7 @@
  */
 
 plugins {
-    id("smartefact.java")
+    id("org.smartefact.java")
     id("biz.aQute.bnd.builder")
 }
 

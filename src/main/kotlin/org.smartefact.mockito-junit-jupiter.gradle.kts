@@ -11,8 +11,8 @@
  */
 
 plugins {
-    id("smartefact.junit-jupiter")
-    id("smartefact.mockito")
+    id("org.smartefact.junit-jupiter")
+    id("org.smartefact.mockito")
 }
 
 testing {

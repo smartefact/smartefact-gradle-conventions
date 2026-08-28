@@ -9,7 +9,7 @@
 import org.jetbrains.dokka.gradle.engine.parameters.VisibilityModifier
 
 plugins {
-    id("smartefact.java")
+    id("org.smartefact.java")
     id("org.jetbrains.kotlin.jvm")
     id("org.jetbrains.dokka")
 }

@@ -11,8 +11,8 @@
  */
 
 plugins {
-    id("smartefact.junit-platform")
-    id("smartefact.arch-tests")
+    id("org.smartefact.junit-platform")
+    id("org.smartefact.arch-tests")
 }
 
 val archunitVersion = "1.4.2"

@@ -9,7 +9,7 @@
  */
 
 plugins {
-    id("smartefact.base")
+    id("org.smartefact.base")
     id("maven-publish")
 }
 

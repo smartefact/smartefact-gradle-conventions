@@ -9,7 +9,7 @@
  */
 
 plugins {
-    id("smartefact.java")
+    id("org.smartefact.java")
 }
 
 val junitVersion = "6.0.3"

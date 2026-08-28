@@ -7,7 +7,7 @@
  */
 
 plugins {
-    id("smartefact.java-gradle-plugin")
-    id("smartefact.maven-publish")
+    id("org.smartefact.java-gradle-plugin")
+    id("org.smartefact.maven-publish")
     id("com.gradle.plugin-publish")
 }

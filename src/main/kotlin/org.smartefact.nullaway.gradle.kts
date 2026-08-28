@@ -16,7 +16,7 @@ import net.ltgt.gradle.errorprone.errorprone
 import net.ltgt.gradle.nullaway.nullaway
 
 plugins {
-    id("smartefact.errorprone")
+    id("org.smartefact.errorprone")
     id("net.ltgt.nullaway")
 }
 

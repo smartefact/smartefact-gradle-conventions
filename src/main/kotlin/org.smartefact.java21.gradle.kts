@@ -7,7 +7,7 @@
  */
 
 plugins {
-    id("smartefact.java")
+    id("org.smartefact.java")
 }
 
 val javaVersion = 21

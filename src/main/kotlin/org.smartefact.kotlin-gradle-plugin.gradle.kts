@@ -7,6 +7,6 @@
  */
 
 plugins {
-    id("smartefact.java-gradle-plugin")
-    id("smartefact.kotlin-jvm")
+    id("org.smartefact.java-gradle-plugin")
+    id("org.smartefact.kotlin-jvm")
 }

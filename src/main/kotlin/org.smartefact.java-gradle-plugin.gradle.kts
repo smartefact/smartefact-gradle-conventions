@@ -7,9 +7,9 @@
  */
 
 plugins {
-    id("smartefact.java")
+    id("org.smartefact.java")
     id("java-gradle-plugin")
-    id("smartefact.functional-tests")
+    id("org.smartefact.functional-tests")
 }
 
 gradlePlugin {

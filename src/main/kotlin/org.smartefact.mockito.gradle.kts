@@ -11,7 +11,7 @@
  */
 
 plugins {
-    id("smartefact.junit-platform")
+    id("org.smartefact.junit-platform")
 }
 
 val mockitoVersion = "5.22.0"

@@ -10,7 +10,7 @@
  */
 
 plugins {
-    id("smartefact.java")
+    id("org.smartefact.java")
     id("me.champeau.jmh")
 }
 
