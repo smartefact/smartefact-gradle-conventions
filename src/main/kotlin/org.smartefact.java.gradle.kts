@@ -22,7 +22,7 @@ tasks.withType<JavaCompile> {
             jvmArgumentProviders.add { listOf("-Dline.separator=\\n") }
         }
         javaModuleVersion = provider { project.version.toString() }
-        debugOptions.debugLevel = "source,lines"
+        debugOptions.debugLevel = "source,lines,vars"
         // Enable various warnings
         isWarnings = true
         isDeprecation = true
