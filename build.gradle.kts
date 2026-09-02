@@ -2,7 +2,7 @@
 
 plugins {
     `kotlin-dsl`
-    id("com.gradle.plugin-publish") version "2.1.1"
+    id("maven-publish")
 }
 
 group = "org.smartefact"
@@ -128,4 +128,42 @@ testing.suites.withType<JvmTestSuite> {
 
 tasks.check {
     dependsOn(functionalTest)
+}
+
+publishing {
+    publications.withType<MavenPublication> {
+        pom {
+            url = "https://github.com/smartefact/smartefact-gradle-conventions"
+            inceptionYear = "2026"
+            licenses {
+                license {
+                    name = "MIT License"
+                    url = "https://mit-license.org/"
+                }
+            }
+            developers {
+                developer {
+                    id = "lpireyn"
+                    name = "Laurent Pireyn"
+                    email = "laurent.pireyn@smartefact.be"
+                    timezone = "Europe/Brussels"
+                    organization = "Smartefact"
+                    organizationUrl = "https://smartefact.be/"
+                }
+            }
+            scm {
+                connection = "scm:git:https://github.com/smartefact/smartefact-gradle-conventions.git"
+                developerConnection = "scm:git:ssh://git@github.com:smartefact/smartefact-gradle-conventions.git"
+                url = "https://github.com/smartefact/smartefact-gradle-conventions"
+            }
+            issueManagement {
+                system = "github"
+                url = "https://github.com/smartefact/smartefact-gradle-conventions/issues"
+            }
+            ciManagement {
+                system = "github"
+                url = "https://github.com/smartefact/smartefact-gradle-conventions/actions"
+            }
+        }
+    }
 }
