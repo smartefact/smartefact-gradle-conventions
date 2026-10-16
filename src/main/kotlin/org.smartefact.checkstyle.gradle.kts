@@ -14,7 +14,7 @@ plugins {
     id("checkstyle")
 }
 
-val checkstyleVersion = "14.1.0"
+val checkstyleVersion = "14.2.0"
 
 checkstyle {
     toolVersion = checkstyleVersion
